@@ -1,11 +1,17 @@
+
+
 def natural_numbers():
     natural = []
-    N = 0
+    n = 0
 
-    while N < 20:
-        natural.append(N)
-        N =+ 1
+    while n < 5:
+        n += 1
+        natural.append(n)
+    
+    reversed_natural = natural[::-1]
 
-    print(natural)
+    print("Dwie kolumny liczb naturalnych")
+    for a, b in zip(natural, reversed_natural):
+        print(f"{a:<3} {b:<3}")
 
 natural_numbers()
